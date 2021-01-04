@@ -1,0 +1,29 @@
+This is a Rocket League mafia discord bot that allows discord users to join a game and then add roles and quantities to their liking.
+After that it randomly distributes the roles among the players and messages them their role.
+It also has voting functionality so a user can vote and then will be messaged if they were correct or not.
+
+/////////////
+// RUNNING //
+/////////////
+
+Before you run it, you must add the bot to the server you want to use it in using this link:
+https://discord.com/oauth2/authorize?client_id=784673252307107841&permissions=0&scope=bot
+
+After that, you need to add a .env file to the repository that contains text saying DISCORD_TOKEN= and then the bots discord token.
+You can get this token from AcePocket#0426 on discord (it isn't something to be shared on the web)
+
+To run the project, simply run the bot.py file ex. python bot.py
+This bot is not being run on a server so in order for it to work, you need run it locally for the duration of your use.
+
+///////////
+// USAGE //
+///////////
+
+mafia open - Opens a new game, must be done before any other commands
+mafia join - Adds you to the current open game, there must be a game open to work
+mafia add_role \{role_name\} \{role_quantity\} - Adds a role to the game defaulted to mafia with quanitity of 1
+mafia start - assigns the roles set to everyone in the lobby and dm\'s everyone their role
+mafia update_role \{role_name\} \{role_quantity\} - Updates a role already in the game, defaults to mafia with quanitity of 1
+mafia vote \{player_name\} \{player_role\} - Checks if that person has the role (default mafia) and dm\'s the result to you
+mafia output - Sends a message showing the current values for players and roles
+mafia close - Closes the current game, must use mafia open before anything else can be done
